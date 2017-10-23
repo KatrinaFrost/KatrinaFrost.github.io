@@ -3,13 +3,13 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 10px;
-  padding-bottom: 100px;
 }
 
 .gallery-container .item-container {
-  /*-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */*/
-  margin: 10px 10px 20px 10px;
-  box-shadow: 2px 3px 4px 3px rgba(0,0,0,0.3);
+  /*-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  box-shadow: 1px 3px 20px 3px rgba(0,0,0,0.3);
+  margin: 0 20px 40px 20px;
+  border-radius: 10px;
 }
 
 .gallery-container .item-container .icon {
@@ -19,5 +19,4 @@
 img:hover {
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
-
 }

@@ -1,5 +1,4 @@
 html, body{
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -12,17 +11,50 @@ h1, h2 {
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
+section h1.title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 36px;
+}
+
+.page-container section {
+  margin-bottom: 50px;
+}
+
+.page-container section h1.title.inverse {
+  color: white;
+}
+
 h2, p {
   color: white;
 }
 
-/* ----------------------------- Name --------------------------------------- */
-.section-one {
-  background-image: linear-gradient(#007991, #78ffd6);
-  height: 700px;
+/* Skewed background */
+
+section.skewed {
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   margin: 0;
+}
+
+section.skewed .bg {
+  background-image: linear-gradient(#007991, #78ffd6);
+  transform: skewY(-3deg);
+}
+section.skewed .content {
+  transform: skewY(3deg);
+  position: relative;
+  padding: 25px;
+}
+
+/* ----------------------------- Name --------------------------------------- */
+.page-container {
+  position: relative;
+  top: -100px;
+  width: 100%;
+}
+
+.section-one .content {
+  height: 750px;
 }
 
 /* ----------------------------- Nav ---------------------------------------- */
@@ -32,7 +64,7 @@ h2, p {
   justify-content: center;
   max-width: 300px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 100px;
   font-size: 24px;
   font-family: 'Quicksand', sans-serif;
 }
@@ -55,9 +87,9 @@ a:hover {
 
 .section-one header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 400px;
+  justify-content: center;
+  height: 600px;
 }
 
 .name {
@@ -75,43 +107,20 @@ a:hover {
 }
 
 /* ---------------------------- Projects ------------------------------------ */
-.section-two {
-  background-image: white;
-  /*height: 700px;*/
-  width: 100%;
-  /*clip-path: polygon(00 10%, 100% 00, 100% 90%, 0 100%);*/
-  /*             top left\top right\bottom right\bottom left*/
-}
-
-.section-two {
-  margin-bottom: 40px;
-}
 
 .projects {
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 36px;
+  margin: 32px;
+
 }
 
 /* ----------------------------- About -------------------------------------- */
-.section-three {
-  background-image: linear-gradient(#007991, #78ffd6);
-  font-size: 25px;
-  clip-path: polygon(00 10%, 100% 00, 100% 90%, 0 100%);
-  /*             top left\top right\bottom right\bottom left*/
-  padding: 5%;
-  position: inherit;
-}
-
-.about {
-  padding-top: 5%;
-  color: white;
-  font-size: 36px;
-}
 
 .aboutText {
   font-family: 'Quicksand', sans-serif;
-  padding: 100px;
+  padding: 20px;
   font-size: 26px;
   margin: 3px;
 }
@@ -119,10 +128,8 @@ a:hover {
 /* ----------------------------- Contact------------------------------------- */
 .section-four {
   background-image: white;
-  height: 700px;
   width: 100%;
-  clip-path: polygon(00 10%, 100% 00, 100% 90%, 0 100%);
-  /*             top left\top right\bottom right\bottom left*/
+  margin-bottom: 20px;
 }
 
 .section-four .flex-container {
@@ -143,11 +150,11 @@ a:hover {
 }
 
 .section-four .icons {
-  padding: 40px;
+  padding: 0 40px;
 }
 
-.section-four .hello {
-  padding: 5px;
+.section-four .hello img {
+  width: 260px;
 }
 
 /* ----------------------------- Footer ------------------------------------- */
@@ -167,4 +174,23 @@ footer {
   font-family: 'Tangerine', cursive;
   font-weight: bold;
   font-size: 36px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  h1.name {
+    font-size: 36px;
+  }
+  h2.jobTitle {
+    font-size: 22px;
+  }
+  .section-one .content {
+    height: 490px;
+  }
+  .section-one header {
+    height: 390px;
+  }
+  .section-one nav.flex-container {
+    font-size: 18px;
+  }
 }
