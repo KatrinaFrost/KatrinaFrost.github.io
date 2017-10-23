@@ -125,6 +125,10 @@ a:hover {
   margin: 3px;
 }
 
+.skewed.section-three .bg{
+  background: #32abaa;
+}
+
 /* ----------------------------- Contact------------------------------------- */
 .section-four {
   background-image: white;
