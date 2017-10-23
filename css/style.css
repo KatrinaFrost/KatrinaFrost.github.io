@@ -1,32 +1,111 @@
-body, p {
+html, body{
   height: 100%;
-  margin: 50;
-  font-size: 30px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.8em;
-  color: #666;
-  text-align: center;
-  background-color: lightgrey;
-  padding-top: 20px;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.contact-container {
+h1, h2 {
   text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+h2, p {
+  color: white;
+}
+
+/* ----------------------------- Name --------------------------------------- */
+.section-one {
+  background-image: linear-gradient(#007991, #78ffd6);
+  height: 450px;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  margin: 0;
+  padding-top: 325px;
+}
+
+.name {
+  margin: 0;
+  font-size: 96px;
+  color: white;
+  vertical-align: middle;
+}
+
+/* ---------------------------- Projects ------------------------------------ */
+.section-two {
+  background-image: white;
+  /*height: 700px;*/
+  width: 100%;
+  /*clip-path: polygon(00 10%, 100% 00, 100% 90%, 0 100%);*/
+  /*             top left\top right\bottom right\bottom left*/
+}
+
+.section-two h1 {
+  margin-bottom: 40px;
+}
+
+.projects {
+  padding-top: 5%;
+}
+
+/* ----------------------------- About -------------------------------------- */
+.section-three {
+  background-image: linear-gradient(#007991, #78ffd6);
+  height: 700px;
+  width: 100%;
+  font-size: 25px;
+  clip-path: polygon(00 10%, 100% 00, 100% 90%, 0 100%);
+  /*             top left\top right\bottom right\bottom left*/
+}
+
+.about {
+  padding-top: 5%;
+  color: white;
+}
+
+/* ----------------------------- Contact------------------------------------- */
+.section-four {
+  background-image: white;
+  height: 700px;
+  width: 100%;
+  clip-path: polygon(00 10%, 100% 00, 100% 90%, 0 100%);
+  /*             top left\top right\bottom right\bottom left*/
+}
+
+.contact {
+  text-align: center;
+  height: 10px;
+  padding: 50px;
+  font-size: 25px;
+}
+
+.hello {
+  text-align: center;
+  height: 10px;
   padding: 40px;
 }
 
-.footer {
-  top: 50%;
-  width: 100%;
+.icons {
   text-align: center;
-  color: #000;
-  font-size: 16px;
-  letter-spacing: 8px;
+  padding-bottom: 80px;
 }
 
-@media(max-width: 568px) {
-  .pimg1, .pimg2, .pimg3 {
-    background-attachment: scroll;
-  }
+/* ----------------------------- Footer ------------------------------------- */
+footer {
+  background-image: linear-gradient(#007991, #78ffd6);
+  display: block;
+  padding-top: 2%;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  text-shadow: 1px 2px 1.5px rgba(0,0,0,0.2);
+}
+
+.katrina {
+  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Tangerine', cursive;
+  font-weight: bold;
+  font-size: 30px;
 }
