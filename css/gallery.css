@@ -9,7 +9,12 @@
   /*-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   box-shadow: 1px 3px 20px 3px rgba(0,0,0,0.3);
   margin: 0 20px 40px 20px;
-  border-radius: 10px;
+  width: 450px;
+  height: 302px;
+}
+
+.gallery-container .item-container img {
+  width: 100%;
 }
 
 .gallery-container .item-container .icon {
