@@ -18,7 +18,7 @@ section h1.title {
 }
 
 .page-container section {
-  margin-bottom: 50px;
+  /*margin-bottom: 50px; do we need this? */
 }
 
 .page-container section h1.title.inverse {
@@ -57,6 +57,11 @@ section.skewed .content {
   height: 750px;
 }
 
+section.section-two {
+  position: relative;
+  top: -100px;
+}
+
 /* ----------------------------- Nav ---------------------------------------- */
 
 .section-one nav.flex-container {
@@ -81,6 +86,22 @@ a:hover {
   cursor: pointer;
   color: #78ffd6;
   text-decoration: underline;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
 }
 
 /* ----------------------------- Header ---------------------------------------- */
@@ -113,7 +134,6 @@ a:hover {
   padding-bottom: 5%;
   font-size: 36px;
   margin: 32px;
-
 }
 
 /* ----------------------------- About -------------------------------------- */
