@@ -19,4 +19,6 @@ $(document).ready(function(){
       $(event.currentTarget).addClass('animated pulse');
     }, 0);
   });
+
+// END
 });
