@@ -9,7 +9,6 @@
   position: relative;
   margin: 0 20px 40px 20px;
   width: 450px;
-  height: 308px;
   overflow: hidden;
   box-shadow: 1px 3px 20px 3px rgba(0,0,0,0.3);
 }
@@ -25,6 +24,7 @@
 
 .gallery-container .item-container .portfolioImage {
   width: 100%;
+  display: block;
 }
 
 .gallery-container .item-container .icon {
