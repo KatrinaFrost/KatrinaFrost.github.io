@@ -148,9 +148,16 @@ a:hover {
   background: #32abaa;
 }
 
+.skewed.section-three .content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .about {
   color: white;
 }
+
+
 
 /* ----------------------------- Contact------------------------------------- */
 .section-four {
